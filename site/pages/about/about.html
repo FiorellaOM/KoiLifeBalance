@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+        <link rel="stylesheet" href="../../styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/942f1191ad.js" crossorigin="anonymous"></script>
+        <script src="../../js/koiBasics.js"></script>
+
+        <title>Koi Life Balance</title>
+        <link rel="icon" type="image/png" href="../../assets/png/favicon 32x32.png">
+        <link rel="stylesheet" href="../../queries.css">
+    </head>
+
+    <div id="xsMenu" class="xsMenu desktopHide">
+      <div class="backDrop" onclick="toggleMenu()"></div>
+      <div class="xsMenuContainer animate__animated animate__slideInLeft">
+        <ul class="xsMenuItems">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="../services/services.html">Services</a></li>
+          <li><a href="../business/business.html">Business services</a></li>
+          <li><a href="../contact/contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <body>
+        
+      <header>
+          <div>
+            <nav class="koiHeader">
+              <a class="koiName" href="../../index.html">
+                <img src="../../assets/svg/logoKoi.svg" class="animate__animated animate__rotateIn" alt="logo dos peces koi"/>
+                <h1>Koi</h1>
+              </a>
+              <ul class="xsHide">
+                <li><a href="../../index.html">Home</a></li>
+                <li><div class="activeSection"><a href="./about.html">About us</a></div></li>
+                <li><a href="../../pages/services/services.html">Services</a></li>
+                <li><a href="../../pages/business/business.html">Business services</a></li>
+                <li><a href="../../pages/contact/contact.html">Contact us</a></li>
+              </ul>
+              <button class="menuMobileButton desktopHide" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+          </div>
+        </header>
+       
+        <main class="aboutContent">
+          <div class="aboutContainer animate__animated animate__fadeIn">
+            <article>
+              <h2 class="sectionTitle">About us</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio
+                dolore eius dolor, fuga, veniam voluptatem et suscipit quas facere
+                tempora incidunt cupiditate officia accusantium maiores quam
+                officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Cupiditate officia accusantium maiores quam
+                officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. 
+              </p>
+            </article>
+            <picture class="imageAbout animate__animated animate__fadeIn slow"></picture>
+          </div>
+        </main>
+        
+        <footer class="koiFooter">
+          <ul>
+            <li class="xsHide">
+              <span class="position"><img src="../../assets/svg/smileyPos.svg" alt="ícono de posición"> 1103 Lotus Street, Fiorida</span>
+            </li>
+            <li class="xsHide"><span><i class="fa-solid fa-plus"></i>3 120 129 1990</span></li>
+            <li>
+              <span><i class="fa-brands fa-instagram"></i></span>
+              <span><i class="fa-brands fa-facebook-square"></i></span>
+              <span><i class="fa-brands fa-linkedin"></i></span>
+            </li>
+            <li><span>© 2022</span></li>
+          </ul>
+        </footer>
+      
+      </body>
+    </html>

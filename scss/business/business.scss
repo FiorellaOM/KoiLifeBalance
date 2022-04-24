@@ -1,0 +1,44 @@
+$koiPrimary: #181430;
+$koiSecondary: #f0372d;
+
+.mainBusiness {
+  flex: 1 1 100%;
+  max-height: 70%;
+  background-color: white;
+  border-radius: 50px;
+  margin: 2rem 2rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    padding: 1rem;
+    font-size: x-small;
+    width: 80%;
+    min-height: 35%;
+    margin-top: 5%;   
+  }
+
+  picture {
+    height: 65%;
+    min-width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-image: url("../assets/img/meditate.jpg");
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+  }
+
+  h3 {
+    color: $koiPrimary;
+    font-size: small;
+    font-style: italic;
+  }
+}
+
+.desktopHide {
+  display: none;
+}

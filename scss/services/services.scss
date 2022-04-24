@@ -1,0 +1,38 @@
+$koiPrimary: #181430;
+$koiSecondary: #f0372d;
+
+.servicesContainer {
+  display: flex;
+  color: #707070;
+}
+.sideServices {
+  flex: 0 1 30%;
+  margin: 2rem 1rem 2rem 2em;
+
+  p {
+    margin: 3rem;
+  }
+}
+
+.mainServices {
+  flex: 1 1 70%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2rem 2rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: x-small;
+    width: 30%;
+  }
+
+  h3 {
+    color: $koiPrimary;
+    font-size: small;
+    font-style: italic;
+  }
+}

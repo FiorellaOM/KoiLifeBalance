@@ -1,0 +1,31 @@
+$koiPrimary: #181430;
+$koiSecondary: #f0372d;
+
+.koiFooter {
+  background-color: $koiPrimary;
+  padding: 1rem;
+
+  img {
+      height: 1.5rem;
+      width: auto;
+      }
+
+  ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: small;
+      color: white;
+      }
+  }
+  
+.position {
+  display: flex;
+  align-items: center;
+  }
+  
+i {
+  margin: 0.5rem;
+  font-size: 1rem;
+  }

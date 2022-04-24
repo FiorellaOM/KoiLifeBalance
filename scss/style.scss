@@ -1,0 +1,62 @@
+
+@import "./animations/animations.scss";
+@import "./header/header.scss";
+@import "./main/main.scss";
+@import "./footer/footer.scss";
+@import "./about/about.scss";
+@import "./contact/contact.scss";
+@import "./services/services.scss";
+@import "./business/business.scss";
+  
+  /* Layout general /////////////////////////////////////////////////////////*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background: rgb(232, 232, 232);
+    background: linear-gradient(
+      180deg,
+      rgba(232, 232, 232, 1) 0%,
+      rgba(79, 89, 89, 0.7) 100%
+    );
+    font-family: "Lato", sans-serif;
+  }
+  
+  .koiFish {
+    height: 3rem;
+    width: auto;
+  }
+  
+  #koi1 {
+    position: fixed;
+    top: 35%;
+    left: 10%;
+  }
+  
+  #koi2 {
+    position: fixed;
+    bottom: 20%;
+    left: 30%;
+    transform: rotate(-0.35turn);
+  }
+  
+  #koi3 {
+    position: fixed;
+    top: 20%;
+    right: 40%;
+    transform: rotate(0.1turn);
+  }
+  
+  #koi4 {
+    position: fixed;
+    bottom: 45%;
+    right: 15%;
+    transform: rotate(0.3turn);
+  }

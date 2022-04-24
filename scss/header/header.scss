@@ -1,0 +1,74 @@
+$koiPrimary: #181430;
+$koiSecondary: #f0372d;
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+.koiHeader {
+  background-color: white;
+  margin: 1rem;
+  margin-bottom: 0;
+  padding: 0 0.5rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1 1 auto;
+        font-size: small;
+        margin-right: 1rem;
+      }
+
+      li a {
+        color: #707070;
+        text-decoration: none;
+        padding: 20px;
+        font-weight: 700;
+        height: 100%;
+
+        &:hover {
+            color: $koiPrimary;
+        }
+      }    
+}
+
+.koiName {
+  color: black;
+  padding: 5px;
+  font-style: italic;
+  font-weight: 700;
+  justify-content: flex-start;
+  flex: 0 1 auto;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+  img {
+    margin-right: 1rem;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+  }
+}
+
+.activeSection {
+  border-bottom: $koiPrimary solid;
+  border-width: 3px;
+  line-height: 4;
+
+  a {
+    color: $koiPrimary;
+    font-weight: 700;
+  }
+}
+

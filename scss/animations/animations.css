@@ -1,0 +1,27 @@
+/*
+    animations:
+*/
+.animate__animated.animate__rotateIn {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeIn .slow {
+  --animate-duration: 2.5s;
+}
+
+.animate__animated.animate__fadeIn .fast {
+  --animate-duration: 0.5s;
+}
+
+.animate__animated.animate__rotateIn {
+  --animate-duration: 2.5s;
+}
+
+.animate__animated.animate__slideInLeft {
+  --animate-duration: 0.2s;
+}
+/*# sourceMappingURL=animations.css.map */

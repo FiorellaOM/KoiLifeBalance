@@ -28,6 +28,10 @@
     );
     font-family: "Lato", sans-serif;
   }
+
+  .koi {
+    position: fixed;
+  }
   
   .koiFish {
     height: 3rem;
@@ -35,27 +39,27 @@
   }
   
   #koi1 {
-    position: fixed;
+    @extend .koi;
     top: 35%;
     left: 10%;
   }
   
   #koi2 {
-    position: fixed;
+    @extend .koi;
     bottom: 20%;
     left: 30%;
     transform: rotate(-0.35turn);
   }
   
   #koi3 {
-    position: fixed;
+    @extend .koi;
     top: 20%;
     right: 40%;
     transform: rotate(0.1turn);
   }
   
   #koi4 {
-    position: fixed;
+    @extend .koi;
     bottom: 45%;
     right: 15%;
     transform: rotate(0.3turn);

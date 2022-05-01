@@ -1,16 +1,20 @@
 $koiPrimary: #181430;
 $koiSecondary: #f0372d;
 
+@mixin flexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainBusiness {
   flex: 1 1 100%;
   max-height: 70%;
   background-color: white;
   border-radius: 50px;
   margin: 2rem 2rem 2rem 1rem;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenterCenter();
 
   div {
     padding: 1rem;

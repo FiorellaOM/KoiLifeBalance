@@ -1,6 +1,12 @@
 $koiPrimary: #181430;
 $koiSecondary: #f0372d;
 
+@mixin flexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .servicesContainer {
   display: flex;
   color: #707070;
@@ -19,9 +25,7 @@ $koiSecondary: #f0372d;
   background-color: white;
   border-radius: 10px;
   margin: 2rem 2rem 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenterCenter();
 
   div {
     justify-content: space-around;

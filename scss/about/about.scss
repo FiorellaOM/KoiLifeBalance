@@ -1,6 +1,12 @@
 $koiPrimary: #181430;
 $koiSecondary: #f0372d;
 
+@mixin flexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutContent {
     display: grid;
     place-items: center;
@@ -8,9 +14,7 @@ $koiSecondary: #f0372d;
   }
 
 .aboutContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenterCenter();
     background-color:white;
     height: 80%;
     width: 65%;

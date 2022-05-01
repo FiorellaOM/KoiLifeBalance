@@ -1,63 +1,65 @@
 $koiPrimary: #181430;
 $koiSecondary: #f0372d;
 
+@mixin flexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .koiContent {
-    display: grid;
-    place-items: center;
-    grid-template-rows: 2fr auto;
-    z-index: 10;
-  }
-  
-  .homeContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    height: 80%;
-    width: 35%;
-    border-radius: 50px;
-    padding: 2.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 2fr auto;
+  z-index: 10;
+}
 
-    p {
-        color: #707070;
-        font-size: small;
-      }
-  }
-  
-  .imageHome {
-    height: 10rem;
-    width: 60%;
-    background-image: url("../assets/svg/homeImg.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .sectionTitle {
-    color: $koiSecondary;
-    font-style: italic;
-    font-weight: lighter;
-    text-align: center;
-    margin: 2rem;
-  }
-  
-  .homeKnowMore {
-      width: 100%;
-      min-height: 50vh;
-      background-color: #141220;
-      color: white;
+.homeContainer {
+  @include flexCenterCenter();
+  flex-direction: column;
+  background-color: white;
+  height: 80%;
+  width: 35%;
+  border-radius: 50px;
+  padding: 2.5rem;
 
-      p {
-        margin: 4rem;
-        font-size: medium;
-        max-width: 30rem;
-    }
+  p {
+    color: #707070;
+    font-size: small;
   }
-  
-  .homeIntro {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      min-height: 90vh;
+}
+
+.imageHome {
+  height: 10rem;
+  width: 60%;
+  background-image: url("../assets/svg/homeImg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sectionTitle {
+  color: $koiSecondary;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  margin: 2rem;
+}
+
+.homeKnowMore {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #141220;
+  color: white;
+
+  p {
+    margin: 4rem;
+    font-size: medium;
+    max-width: 30rem;
   }
+}
+
+.homeIntro {
+  @include flexCenterCenter();
+  width: 100%;
+  min-height: 90vh;
+}

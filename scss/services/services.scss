@@ -1,6 +1,15 @@
 $koiPrimary: #181430;
 $koiSecondary: #f0372d;
 
+@mixin bg-gradient {
+  background: rgb(232, 232, 232);
+  background: linear-gradient(
+    180deg,
+    rgba(#E1E8E2, 1) 0%,
+    rgba(#B1CBB1, 1) 100%
+  );
+}
+
 @mixin flexCenterCenter {
   display: flex;
   justify-content: center;
@@ -39,4 +48,13 @@ $koiSecondary: #f0372d;
     font-size: small;
     font-style: italic;
   }
+}
+
+.serviceIcon {
+  @include bg-gradient();
+  border-radius: 100%;
+  width: 100%;
+  padding: 3rem;
+  height: auto;
+  margin: 2rem 0;
 }

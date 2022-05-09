@@ -9,6 +9,15 @@
 @import "./business/business.scss";
   
   /* Layout general /////////////////////////////////////////////////////////*/
+
+  @mixin bg-gradient {
+    background: rgb(232, 232, 232);
+    background: linear-gradient(
+      180deg,
+      rgba(#E1E8E2, 1) 0%,
+      rgba(#B1CBB1, 1) 100%
+    );
+  }
   
   * {
     margin: 0;
@@ -20,47 +29,141 @@
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-    background: rgb(232, 232, 232);
-    background: linear-gradient(
-      180deg,
-      rgba(232, 232, 232, 1) 0%,
-      rgba(79, 89, 89, 0.7) 100%
-    );
     font-family: "Lato", sans-serif;
   }
 
+  .bgGradient {
+    @include bg-gradient();
+  }
+
+  .bgWhite {
+    background: white;
+  }
+
+  /* Elementos de Background  /////////////////////////////////////////////////////////*/
+
+  .backgroundElements {
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeBgWater {
+    background: url("../assets/svg/water.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    top: 0%;
+    height: 40%;
+    width: 100%;
+  }
+
+  .homeGirl {
+    position: absolute;
+    top: 35%;
+    height: 25%;
+    width: auto;
+    z-index: 5;
+  }
+
+  .leaf {
+    position: absolute;
+    height: 4rem;
+    width: auto;
+  }
+
+  #leaf1 {
+    @extend .leaf;
+    top: 10%;
+    left: 20%;
+    transform: rotate(0.6turn);
+  }
+
+  #leaf2 {
+    @extend .leaf;
+    top: 32%;
+    left: 35%;
+    height: 3rem;
+    transform: rotate(0.3turn);
+  }
+
+  #leaf3 {
+    @extend .leaf;
+    top: 15%;
+    right: 40%;
+    height: 2rem;
+    transform: rotate(0.1turn);
+  }
+
+  #leaf4 {
+    @extend .leaf;
+    top: 10%;
+    right: 20%;
+    height: 3.5rem;
+    transform: rotate(-0.2turn);
+  }
+
+  .lily {
+    position: absolute;
+    height: 4rem;
+    width: auto;
+  }
+
+  #lily1 {
+    @extend .lily;
+    top: 20%;
+    left: 30%;
+  }
+
+  #lily2 {
+    @extend .lily;
+    top: 30%;
+    right: 35%;
+    height: 5rem;
+    transform: rotate(-0.35turn);
+  }
+  
+
   .koi {
-    position: fixed;
+    position: absolute;
   }
   
   .koiFish {
     height: 3rem;
     width: auto;
   }
+
+  #koiHome {
+    @extend .koi;
+    top: 15%;
+    left: 40%;
+    height: 4rem;
+  }
   
   #koi1 {
     @extend .koi;
-    top: 35%;
+    top: 25%;
     left: 10%;
   }
   
   #koi2 {
     @extend .koi;
     bottom: 20%;
-    left: 30%;
+    left: 5%;
     transform: rotate(-0.35turn);
   }
   
   #koi3 {
     @extend .koi;
     top: 20%;
-    right: 40%;
+    right: 20%;
     transform: rotate(0.1turn);
   }
   
   #koi4 {
     @extend .koi;
-    bottom: 45%;
-    right: 15%;
+    bottom: 25%;
+    right: 12%;
     transform: rotate(0.3turn);
   }
+

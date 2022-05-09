@@ -1,5 +1,5 @@
 .koiFooter {
-  background-color: colors;
+  background-color: #181430;
   padding: 1rem;
 }
 
@@ -34,5 +34,10 @@
 i {
   margin: 0.5rem;
   font-size: 1rem;
+}
+
+i:hover {
+  cursor: pointer;
+  color: #f0372d;
 }
 /*# sourceMappingURL=footer.css.map */

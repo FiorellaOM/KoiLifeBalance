@@ -1,0 +1,61 @@
+.servicesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #707070;
+}
+
+.sideServices {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  margin: 2rem 1rem 2rem 2em;
+}
+
+.sideServices p {
+  margin: 3rem;
+}
+
+.mainServices {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2rem 2rem 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainServices div {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  font-size: x-small;
+  width: 30%;
+}
+
+.mainServices h3 {
+  color: #181430;
+  font-size: small;
+  font-style: italic;
+}
+
+.serviceIcon {
+  background: #e8e8e8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e1e8e2), to(#b1cbb1));
+  background: linear-gradient(180deg, #e1e8e2 0%, #b1cbb1 100%);
+  border-radius: 100%;
+  width: 100%;
+  padding: 3rem;
+  height: auto;
+  margin: 2rem 0;
+}
+/*# sourceMappingURL=services.css.map */

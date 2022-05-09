@@ -28,6 +28,10 @@
     padding: 2.5rem;
   }
 
+  .homeGirl {
+    height: 20%;
+  }
+
   .xsMenu {
     display: none;
     position: fixed;

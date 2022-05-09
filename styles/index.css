@@ -29,7 +29,10 @@ header {
   padding: 0 0.5rem;
   border-radius: 50px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.2); }
 
 nav ul {
   list-style: none;
@@ -82,16 +85,17 @@ nav li a {
 
 .homeContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: white;
+  align-items: center;
+  margin-top: 20vh;
+  flex-direction: column;
+  background-color: #181430;
   height: 80%;
-  width: 35%;
-  border-radius: 50px;
+  width: 55%;
+  border-radius: 100px;
   padding: 2.5rem; }
   .homeContainer p {
-    color: #707070;
+    color: white;
     font-size: small; }
 
 .imageHome {
@@ -148,6 +152,10 @@ i {
   margin: 0.5rem;
   font-size: 1rem; }
 
+i:hover {
+  cursor: pointer;
+  color: #f0372d; }
+
 .aboutContent {
   display: grid;
   place-items: center;
@@ -155,8 +163,8 @@ i {
 
 .aboutContainer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: white;
   height: 80%;
   width: 65%;
@@ -177,14 +185,12 @@ i {
 
 .contactContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: white;
   padding: 0.5rem 4rem;
-  border-radius: 50px;
-  justify-items: center;
-  align-items: center; }
+  border-radius: 50px; }
   .contactContainer form input {
     background-color: #f1f1f1;
     border: none;
@@ -216,6 +222,10 @@ i {
   border-radius: 10px;
   margin: 1rem; }
 
+.siteButton:hover {
+  cursor: pointer;
+  background-color: #f0372d; }
+
 .servicesContainer {
   display: flex;
   color: #707070; }
@@ -244,24 +254,35 @@ i {
     font-size: small;
     font-style: italic; }
 
+.serviceIcon {
+  background: #e8e8e8;
+  background: linear-gradient(180deg, #e1e8e2 0%, #b1cbb1 100%);
+  border-radius: 100%;
+  width: 100%;
+  padding: 3rem;
+  height: auto;
+  margin: 2rem 0; }
+
 .mainBusiness {
   flex: 1 1 100%;
   max-height: 70%;
   background-color: white;
   border-radius: 50px;
   margin: 2rem 2rem 2rem 1rem;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-start;
   align-items: center; }
   .mainBusiness div {
+    display: flex;
     padding: 1rem;
     font-size: x-small;
     width: 80%;
-    min-height: 35%;
-    margin-top: 5%; }
+    min-height: 50%;
+    flex-direction: column;
+    justify-content: center; }
   .mainBusiness picture {
-    height: 65%;
+    height: 45%;
     min-width: 100%;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
@@ -288,33 +309,107 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background: #e8e8e8;
-  background: linear-gradient(180deg, #e8e8e8 0%, rgba(79, 89, 89, 0.7) 100%);
   font-family: "Lato", sans-serif; }
+
+.bgGradient {
+  background: #e8e8e8;
+  background: linear-gradient(180deg, #e1e8e2 0%, #b1cbb1 100%); }
+
+.bgWhite {
+  background: white; }
+
+/* Elementos de Background  /////////////////////////////////////////////////////////*/
+.backgroundElements {
+  display: flex;
+  justify-content: center; }
+
+.homeBgWater {
+  background: url("../assets/svg/water.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+  top: 0%;
+  height: 40%;
+  width: 100%; }
+
+.homeGirl {
+  position: absolute;
+  top: 35%;
+  height: 25%;
+  width: auto;
+  z-index: 5; }
+
+.leaf, #leaf1, #leaf2, #leaf3, #leaf4 {
+  position: absolute;
+  height: 4rem;
+  width: auto; }
+
+#leaf1 {
+  top: 10%;
+  left: 20%;
+  transform: rotate(0.6turn); }
+
+#leaf2 {
+  top: 32%;
+  left: 35%;
+  height: 3rem;
+  transform: rotate(0.3turn); }
+
+#leaf3 {
+  top: 15%;
+  right: 40%;
+  height: 2rem;
+  transform: rotate(0.1turn); }
+
+#leaf4 {
+  top: 10%;
+  right: 20%;
+  height: 3.5rem;
+  transform: rotate(-0.2turn); }
+
+.lily, #lily1, #lily2 {
+  position: absolute;
+  height: 4rem;
+  width: auto; }
+
+#lily1 {
+  top: 20%;
+  left: 30%; }
+
+#lily2 {
+  top: 30%;
+  right: 35%;
+  height: 5rem;
+  transform: rotate(-0.35turn); }
+
+.koi, #koiHome, #koi1, #koi2, #koi3, #koi4 {
+  position: absolute; }
 
 .koiFish {
   height: 3rem;
   width: auto; }
 
+#koiHome {
+  top: 15%;
+  left: 40%;
+  height: 4rem; }
+
 #koi1 {
-  position: fixed;
-  top: 35%;
+  top: 25%;
   left: 10%; }
 
 #koi2 {
-  position: fixed;
   bottom: 20%;
-  left: 30%;
+  left: 5%;
   transform: rotate(-0.35turn); }
 
 #koi3 {
-  position: fixed;
   top: 20%;
-  right: 40%;
+  right: 20%;
   transform: rotate(0.1turn); }
 
 #koi4 {
-  position: fixed;
-  bottom: 45%;
-  right: 15%;
+  bottom: 25%;
+  right: 12%;
   transform: rotate(0.3turn); }

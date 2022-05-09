@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Koi Life Balance provee a personas, empresas, escuelas y otras organizaciones de las herramientas necesarias a través de asesorías, talleres y clases para incrementar el bienestar, la productividad, mejorar la sustentabilidad, y alcanzar objetivos."/>
-  <meta name="keywords" content="bienestar, productividad, salud, sustentabilidad, logro, equilibrio, valores"/>
+  <meta name="description"
+    content="Koi Life Balance provee a personas, empresas, escuelas y otras organizaciones de las herramientas necesarias a través de asesorías, talleres y clases para incrementar el bienestar, la productividad, mejorar la sustentabilidad, y alcanzar objetivos." />
+  <meta name="keywords" content="bienestar, productividad, salud, sustentabilidad, logro, equilibrio, valores" />
   <link rel="shortcut icon" href="assets/img/favicon.png" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +35,8 @@
   </div>
 </div>
 
-<body>
- 
+<body class="bgWhite">
+
   <header>
     <div>
       <nav class="koiHeader">
@@ -47,7 +45,9 @@
           <h1>Koi</h1>
         </a>
         <ul class="xsHide">
-          <li><div class="activeSection"><a href="index.html">Home</a></div></li>
+          <li>
+            <div class="activeSection"><a href="index.html">Home</a></div>
+          </li>
           <li><a href="./pages/about/about.html">About us</a></li>
           <li><a href="./pages/services/services.html">Services</a></li>
           <li><a href="./pages/business/business.html">Business services</a></li>
@@ -57,17 +57,24 @@
       </nav>
     </div>
   </header>
-  
+
   <main class="koiContent">
     <section class="homeIntro">
-      <div class="homeContainer animate__animated animate__fadeIn">
-        <picture class="imageHome animate__animated animate__fadeIn slow">
-        </picture>   
-        <article>
-          <h2 class="sectionTitle">Koi Life Balance</h2>
+      <div class="backgroundElements">
+        <div class="homeBgWater"></div>
+        <img id="koiHome" class="koiFish" src="./assets/svg/koi.svg" alt="pez koi"/>
+       <img id="lily1" class="lily" src="./assets/svg/lily.svg" alt="flor de lily"/>
+        <img id="lily2" class="lily xsHide" src="./assets/svg/lily.svg" alt="flor de lily"/>
+        <img id="leaf1" class="leaf" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
+        <img id="leaf2" class="leaf xsHide" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
+        <img id="leaf3" class="leaf xsHide" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
+        <img id="leaf4" class="leaf xsHide" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
+        <img class="homeGirl" src="./assets/svg/girl.svg" />
+        <article class="homeContainer">
+          <!-- <h2 class="sectionTitle">Koi Life Balance</h2> -->
           <p>
-            "Para conservar el equilibrio, debemos mantener unido lo interior y lo exterior, 
-            lo visible y lo invisible, lo conocido y lo desconocido, lo temporal y lo eterno, 
+            "Para conservar el equilibrio, debemos mantener unido lo interior y lo exterior,
+            lo visible y lo invisible, lo conocido y lo desconocido, lo temporal y lo eterno,
             lo antiguo y lo nuevo."
           </p>
         </article>
@@ -76,7 +83,8 @@
     <section class="homeKnowMore">
       <article>
         <p>
-          Creemos que a través de nuevas perspectivas podemos alcanzar armonía y lograr enriquecernos y así fortalecernos, alcanzando un equilibrio interior y exterior. 
+          Creemos que a través de nuevas perspectivas podemos alcanzar armonía y lograr enriquecernos y así
+          fortalecernos, alcanzando un equilibrio interior y exterior. 
           De este modo tus metas y objetivos estarán al alcance de tus manos.
           <br>
           <br>
@@ -85,11 +93,12 @@
       </article>
     </section>
   </main>
-  
+
   <footer class="koiFooter">
     <ul>
       <li class="xsHide">
-        <span class="position"><img src="./assets/svg/smileyPos.svg" alt="ícono de posición"> 1103 Lotus Street, Fiorida</span>
+        <span class="position"><img src="./assets/svg/smileyPos.svg" alt="ícono de posición"> 1103 Lotus Street,
+          Fiorida</span>
       </li>
       <li class="xsHide"><span><i class="fa-solid fa-plus"></i>3 120 129 1990</span></li>
       <li>
@@ -100,14 +109,6 @@
       <li><span>© 2022</span></li>
     </ul>
   </footer>
-
-  <div class="backgroundElements">
-    <img id="koi1" class="koiFish" src="./assets/svg/koi.svg" alt="pez koi">
-    <img id="koi2" class="koiFish" src="./assets/svg/koi.svg" alt="pez koi">
-    <img id="koi3" class="koiFish" src="./assets/svg/koi.svg" alt="pez koi">
-    <img id="koi4" class="koiFish" src="./assets/svg/koi.svg" alt="pez koi">
-  </div>
-
 </body>
 
 </html>

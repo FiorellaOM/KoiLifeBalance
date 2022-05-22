@@ -64,32 +64,32 @@ $koiSecondary: #f0372d;
 
 .pic1 {
   grid-area: pic1;
-  background-image: url("../../assets/jpg/sustentabilidad.jpg");
+  background-image: url("../assets/jpg/sustentabilidad.jpg");
   background-position: center;
   @extend.pic;
 }
 
 .pic2 {
   grid-area: pic2;
-  background-image: url("../../assets/jpg/escuela.jpg");
+  background-image: url("../assets/jpg/escuela.jpg");
   @extend.pic;
 }
 
 .pic3 {
   grid-area: pic3;
-  background-image: url("../../assets/jpg/huerta.jpg");
+  background-image: url("../assets/jpg/huerta.jpg");
   @extend.pic;
 }
 
 .pic4 {
   grid-area: pic4;
-  background-image: url("../../assets/jpg/meditacion.jpg");
+  background-image: url("../assets/jpg/meditacion.jpg");
   @extend.pic;
 }
 
 .pic5 {
   grid-area: pic5;
-  background-image: url("../../assets/jpg/vegetarianismo.jpg");
+  background-image: url("../assets/jpg/vegetarianismo.jpg");
   @extend.pic;
 }
 

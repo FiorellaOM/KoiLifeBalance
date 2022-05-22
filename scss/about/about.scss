@@ -15,13 +15,13 @@ $koiSecondary: #f0372d;
 
 .aboutContainer {
     @include flexCenterCenter();
-    background-color:white;
-    height: 80%;
-    width: 65%;
-    border-radius: 50px;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 
     article {
-        margin: 3rem;
+        padding: 1rem;
     }
   }
 

@@ -10,9 +10,12 @@ $koiSecondary: #f0372d;
 .contactContainer {
     @include flexCenterCenter();
     flex-direction: column;
-    background-color: white;
+    background-color: rgba($color: white, $alpha: 0.3);
     padding: 0.5rem 4rem;
     border-radius: 50px;
+    backdrop-filter: blur(3px);
+    border: white solid;
+    border-width: 1px;
 
     form input {
         background-color: #f1f1f1;

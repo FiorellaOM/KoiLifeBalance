@@ -30,13 +30,14 @@
         <li><a href="../../index.html">Home</a></li>
         <li><a href="../about/about.html">About us</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="../business/business.html">Business services</a></li>
+        <li><a href="../business/business.html">Others</a></li>
         <li><a href="../contact/contact.html">Contact us</a></li>
       </ul>
     </div>
   </div>
 
 <body class="bgGradient">
+    <div class="liquidBox once"></div>
     <header>
         <div>
             <nav class="koiHeader">
@@ -48,41 +49,113 @@
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../../pages/about/about.html">About us</a></li>
                     <li><div class="activeSection"><a href="./services.html">Services</a></div></li>
-                    <li><a href="../../pages/business/business.html">Business services</a></li>
+                    <li><a href="../../pages/business/business.html">Others</a></li>
                     <li><a href="../../pages/contact/contact.html">Contact us</a></li>
                 </ul>
                 <button class="menuMobileButton desktopHide" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
             </nav>
         </div>
     </header>
+
     <main class="koiContent">
-            <article class="servicesContainer animate__animated animate__fadeIn">
-                <aside class="sideServices">
+
+        <article class="servicesContainer">
+            <section >
+                <div class="topServices animate__animated animate__fadeIn">
                     <h2 class="sectionTitle">Services</h2>
                     <p>
-                        Trabajamos a través de asesorías virtuales y con modalidad presencial, con guía y seguimiento personalizado o grupal.
-                        Nuestros tres ejes principales son la alimentación, el equilibrio mente y cuerpo y la consciencia medio-ambiental.
+                        Trabajamos a través de asesorías virtuales y con modalidad presencial, con guía y seguimiento personalizado o grupal (talleres).
+                        <br>
+                        Nuestros tres ejes principales se dividen en: alimentación, mente y cuerpo y sustentabilidad.
                     </p>
-                </aside>
-                <section class="mainServices">
+                </div>
+                <div class="mainServices">
                     <div>
-                        <img class="serviceIcon" src="../../assets/svg/food.svg" />
+                        <img class="serviceIcon animate__animated animate__fadeIn" src="../../assets/svg/food.svg" />
                         <h3>Alimentación</h3>
-                        <p>Alimentación saludable, huerta, vegetarianismo y veganismo (como preparar un plato completo, conservación de alimentos, impacto sobre el medio ambiente, otros productos con materiales de origen animal).</p>
+                        <p>La alimentación afecta directamente a nuestra salud física y tiene un efecto significativo sobre la mente.</p>
+                        <a href="#imageAlimentacion">Más información</a>
                     </div>
                     <div>
-                        <img class="serviceIcon" src="../../assets/svg/yoga.svg" />
-                        <h3>Cuerpo y Mente</h3>
-                        <p>Encontrar aquello que nos genera disfrute, yoga, incorporación paulatina de meditación, distintos tipos de meditación. Consciencia emocional y como canalizarla. Motivaciones y objetivos.</p>
+                        <img class="serviceIcon animate__animated animate__fadeIn" src="../../assets/svg/bonsai.svg" />
+                        <h3>Sustentabilidad</h3>
+                        <p>Cuidar el medio ambiente y sus recursos tiene efectos positivos para todos, con pequeños actos podemos crear futuro.</p>
+                        <a href="#imageSustentabilidad">Más información</a>
                     </div>
                     <div>
-                        <img class="serviceIcon" src="../../assets/svg/bonsai.svg" />
-                        <h3>Conciencia medio-ambiental</h3>
-                        <p>Reduce, reuse, recycle. Compostaje. Compras inteligentes en función de los packagings y tipo de productos y sus componentes (incorporación de bolsas de tela, shampoo y crema enjuague sólidos, paños de tela de abeja, esponjas de yute, compras a granel). </p>
+                        <img class="serviceIcon animate__animated animate__fadeIn" src="../../assets/svg/yoga.svg" />
+                        <h3>Mente y Cuerpo</h3>
+                        <p>Tomar consciencia de nuestros propios comportamientos y pensamientos para lograr bienestar físico y mental.</p>
+                        <a href="#imageMenteCuerpo">Más información</a>
                     </div>
-                </section>
-            </article>
+                </div>
+            </section>
+        </article>
+    
+        <article class="servicesSectionCont">
+            <section class="serviceSection">
+                <div id="imageAlimentacion" class="sectionImage"></div>
+                <div class="sectionText">
+                    <h3>Alimentación</h3>
+                    <p>
+                        Alimentación saludable: importancia de generar hábitos, cómo preparar un plato completo nutricionalmente.
+                        <br>
+                        Compras inteligentes: como leer información nutricional de los productos que adquirimos.
+                        <br>
+                        Vegetarianismo.
+                        <br>
+                        Veganismo.
+                        <br>
+                        Huerta e ingredientes orgánicos.
+                        <br>
+                        Conservación de alimentos, prep meal, organizar compras y recetas.
+                        <br>
+                        Impacto sobre el medio ambiente.
+                        <br>
+                        Otros productos con materiales de origen animal y sus remplazos.
+                    </p>
+                </div>
+            </section>
+            <hr>
+            <section class="serviceSection">
+                <div id="imageSustentabilidad" class="sectionImage"></div>
+                <div class="sectionText">
+                    <h3>Sustentabilidad</h3>
+                    <p>
+                        Reduce, reuse, recycle. 
+                        <br>
+                        Compostaje. 
+                        <br>
+                        Compras inteligentes: packagings y clases de productos, sus componentes, compras a granel.
+                        <br>
+                        Productos ecofriendly: bolsas de tela y envases reutilizables, envoltorios de cera de abeja, shampoo y crema enjuague sólidos, esponjas de yute y cepillos, eco-bombillas, productos realizados con materiales biodegradables, entre muchos más.
+                        <br>
+                        Hábitos con impacto positivo.
+                    </p>
+                </div>
+            </section>
+            <hr>
+            <section class="serviceSection">
+                <div id="imageMenteCuerpo" class="sectionImage"></div>
+                <div class="sectionText">
+                    <h3>Mente y Cuerpo</h3>
+                    <p>
+                        Encontrar aquello que nos genera disfrute, aprender a conocernos.
+                        <br>
+                        Yoga, Tai Chi, Pilates.
+                        <br>
+                        Meditación: distintas técnicas y tipos de meditación; cómo incorporarla a nuestra rutina; su aplicación en situaciones de stress. 
+                        <br>
+                        Mindfulness.
+                        <br>
+                        Coaching: individual o grupal; de carrera, para el desarrollo de habilidades, de vida.
+                    </p>
+                </div>
+            </section>
+        </article>
+
     </main>
+
     <footer class="koiFooter">
         <ul>
           <li class="xsHide">

@@ -17,23 +17,26 @@ $koiSecondary: #f0372d;
 }
 
 .servicesContainer {
-  display: flex;
+  @include flexCenterCenter();
   color: #707070;
+  background-color: white;
+  min-width: 100%;
+  margin: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.sideServices {
-  flex: 0 1 30%;
-  margin: 2rem 1rem 2rem 2em;
-
+.topServices {
+  @include flexCenterCenter();
+  flex-direction: column;
+  color: black;
   p {
-    margin: 3rem;
+    text-align: center;
   }
 }
 
 .mainServices {
-  flex: 1 1 70%;
-  background-color: white;
-  border-radius: 10px;
-  margin: 2rem 2rem 2rem 1rem;
+  flex: 1 1 40%;
+  margin: 0rem 2rem 2rem 1rem;
   @include flexCenterCenter();
 
   div {
@@ -45,16 +48,81 @@ $koiSecondary: #f0372d;
 
   h3 {
     color: $koiPrimary;
-    font-size: small;
+    font-size: medium;
     font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: #f0372d;
+  }
+
+  a:hover{
+    cursor: pointer;
   }
 }
 
 .serviceIcon {
-  @include bg-gradient();
-  border-radius: 100%;
   width: 100%;
-  padding: 3rem;
   height: auto;
-  margin: 2rem 0;
+}
+
+.serviceSection{
+  @include flexCenterCenter();
+  flex-direction: row;
+  min-height: 60vh;
+  min-width: 99vw;
+}
+
+#imageAlimentacion {
+  background-image: url("../../assets/jpg/Alimentacion.jpg");
+  background-position: bottom;
+}
+
+#imageSustentabilidad{
+  background-image: url("../../assets/jpg/Botella.jpg");
+}
+
+#imageMenteCuerpo{
+  background-image: url("../../assets/jpg/Coaching.jpg");
+}
+
+.sectionImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  background-color: white;
+  min-height: 17rem;
+  min-width: 17rem;
+  margin: 4rem;
+}
+
+.sectionText {
+  h3{
+    color: $koiPrimary;
+    font-size: larger;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  p{
+    color: #707070;
+    margin-right: 5rem;
+  }
+
+}
+
+.servicesSectionCont{
+  hr{
+    border: white solid;
+    border-width: 10px;
+  }
 }

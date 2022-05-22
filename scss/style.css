@@ -238,6 +238,11 @@ i {
   font-size: 1rem;
 }
 
+i:hover {
+  cursor: pointer;
+  color: #f0372d;
+}
+
 .aboutContent {
   display: -ms-grid;
   display: grid;
@@ -331,6 +336,11 @@ i {
   margin: 1rem;
 }
 
+.siteButton:hover {
+  cursor: pointer;
+  background-color: #f0372d;
+}
+
 .servicesContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +391,17 @@ i {
   font-style: italic;
 }
 
+.serviceIcon {
+  background: #e8e8e8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e1e8e2), to(#b1cbb1));
+  background: linear-gradient(180deg, #e1e8e2 0%, #b1cbb1 100%);
+  border-radius: 100%;
+  width: 100%;
+  padding: 3rem;
+  height: auto;
+  margin: 2rem 0;
+}
+
 .mainBusiness {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
@@ -396,24 +417,33 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .mainBusiness div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 1rem;
   font-size: x-small;
   width: 80%;
-  min-height: 35%;
-  margin-top: 5%;
+  min-height: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mainBusiness picture {
-  height: 65%;
+  height: 45%;
   min-width: 100%;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;

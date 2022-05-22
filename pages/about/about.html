@@ -1,92 +1,129 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Profesores, psicólogos, licenciados en gestión ambiental, nutricionistas y profesionales dispuestos a ayudarte a alcanzar objetivos personales y organizacionles"/>
-        <meta name="keywords" content="profesionales, psicólogos, ambiental, nutricionistas"/>   
-        <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
-        <link rel="stylesheet" href="../../styles/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/942f1191ad.js" crossorigin="anonymous"></script>
-        <script src="../../js/koiBasics.js"></script>
 
-        <title>Koi_About_Us</title>
-        <link rel="icon" type="image/png" href="../../assets/png/favicon 32x32.png">
-        <link rel="stylesheet" href="../../queries.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Profesores, psicólogos, licenciados en gestión ambiental, nutricionistas y profesionales dispuestos a ayudarte a alcanzar objetivos personales y organizacionles" />
+  <meta name="keywords" content="profesionales, psicólogos, ambiental, nutricionistas" />
+  <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/942f1191ad.js" crossorigin="anonymous"></script>
+  <script src="../../js/koiBasics.js"></script>
+  <link rel="icon" type="image/png" href="../../assets/png/favicon 32x32.png">
+  <link rel="stylesheet" href="../../styles/index.css">
+  <link rel="stylesheet" href="../../queries.css">
+  <title>Koi_About_Us</title>
+</head>
 
-    <div id="xsMenu" class="xsMenu desktopHide">
-      <div class="backDrop" onclick="toggleMenu()"></div>
-      <div class="xsMenuContainer animate__animated animate__slideInLeft">
-        <ul class="xsMenuItems">
+<div id="xsMenu" class="xsMenu desktopHide">
+  <div class="backDrop" onclick="toggleMenu()"></div>
+  <div class="xsMenuContainer animate__animated animate__slideInLeft">
+    <ul class="xsMenuItems">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="../services/services.html">Services</a></li>
+      <li><a href="../business/business.html">Others</a></li>
+      <li><a href="../contact/contact.html">Contact us</a></li>
+    </ul>
+  </div>
+</div>
+
+<body class="bgGradient">
+  <header>
+    <div>
+      <nav class="koiHeader">
+        <a class="koiName" href="../../index.html">
+          <img src="../../assets/svg/logoKoi.svg" class="animate__animated animate__rotateIn"
+            alt="logo dos peces koi" />
+          <h1 class="fs-4 fw-bold mb-0" >Koi</h1>
+        </a>
+        <ul class="xsHide mb-0">
           <li><a href="../../index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="../services/services.html">Services</a></li>
-          <li><a href="../business/business.html">Business services</a></li>
-          <li><a href="../contact/contact.html">Contact us</a></li>
+          <li>
+            <div class="activeSection"><a href="./about.html">About us</a></div>
+          </li>
+          <li><a href="../../pages/services/services.html">Services</a></li>
+          <li><a href="../../pages/business/business.html">Others</a></li>
+          <li><a href="../../pages/contact/contact.html">Contact us</a></li>
         </ul>
-      </div>
+        <button class="menuMobileButton desktopHide" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="aboutContent">
+    <div class="aboutContainer animate__animated animate__fadeIn">
+      <article>
+        <h1 class="sectionTitle fs-4">Koi Life Balance</h1>
+          <p>
+          Somos un equipo de personas que está convencido de que todos podemos sentirnos en equilibrio con
+          nuestro interior, con el entorno que nos rodea y con el medio ambiente, a través de la incorporación de buenos
+          hábitos.
+          <br>
+          Podemos mejorar nuestra productividad, encontrar motivación y así alcanzar objetivos personales, laborales,
+          colectivos. Vivir en equilibrio.
+          <br>
+          <br>
+          Está idea que surgió como el proyecto de tres amigas, ha crecido inimaginablemente, transformandose en el sueño de nuestro equipo,
+          que cuenta actualmente con un staff de más de cuarenta personas que aportan sus conocimientos en distintas áreas
+          para poder hacerlo realidad.
+        </p>
+      </article>
     </div>
 
-    <body class="bgGradient">
-        
-      <header>
-          <div>
-            <nav class="koiHeader">
-              <a class="koiName" href="../../index.html">
-                <img src="../../assets/svg/logoKoi.svg" class="animate__animated animate__rotateIn" alt="logo dos peces koi"/>
-                <h1>Koi</h1>
-              </a>
-              <ul class="xsHide">
-                <li><a href="../../index.html">Home</a></li>
-                <li><div class="activeSection"><a href="./about.html">About us</a></div></li>
-                <li><a href="../../pages/services/services.html">Services</a></li>
-                <li><a href="../../pages/business/business.html">Business services</a></li>
-                <li><a href="../../pages/contact/contact.html">Contact us</a></li>
-              </ul>
-              <button class="menuMobileButton desktopHide" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
-            </nav>
-          </div>
-        </header>
-       
-        <main class="aboutContent">
-          <div class="aboutContainer animate__animated animate__fadeIn">
-            <article>
-              <h1 class="sectionTitle">Koi Life Balance</h1>
-              <p>
-                Somos un grupo de profesionales que estamos convencidos que las personas podemos sentirnos en equilibrio con nuestro interior, con el entorno que nos rodea y con el medio ambiente, a través de la incorporación de buenos hábitos. 
-                <br>
-                Podemos mejorar nuestra productividad, encontrar motivación y así alcanzar objetivos personales, laborales, colectivos. Vivir en equilibrio.
-                <br>
-                <br>
-                Contamos con expertos en nutrición, gestión medioambiental, coaching, yoga, meditación y psicología, listos para dotarte de las herramientas que facilitarán tu crecimiento.
-              </p>
-            </article>
-            <picture class="imageAbout animate__animated animate__fadeIn slow"></picture>
-          </div>
-        </main>
-        
-        <footer class="koiFooter">
-          <ul>
-            <li class="xsHide">
-              <span class="position"><img src="../../assets/svg/smileyPos.svg" alt="ícono de posición"> 1103 Lotus Street, Fiorida</span>
-            </li>
-            <li class="xsHide"><span><i class="fa-solid fa-plus"></i>3 120 129 1990</span></li>
-            <li>
-              <span><i class="fa-brands fa-instagram"></i></span>
-              <span><i class="fa-brands fa-facebook-square"></i></span>
-              <span><i class="fa-brands fa-linkedin"></i></span>
-            </li>
-            <li><span>© 2022</span></li>
-          </ul>
-        </footer>
-      
-      </body>
-    </html>
+    <div class="card-group m-4">
+      <div class="card">
+        <img src="../../assets/jpg/Olivia.jpg" class="card-img-top" alt="retrato de Olivia">
+        <div class="card-body">
+          <h5 class="card-title">Olivia</h5>
+          <p class="card-text">Licenciada en Administración de Empresas y amante de los viajes, profesora de yoga en sus tiempos libres, ha realizado numerosas capacitaciones en mindfulness y meditación.</p>
+          <p class="card-text"><small class="text-muted">"Conocer distintas culturas ha impulsado mi curisidad en aprender y tomar lo positivo de cada nueva experiencia. Es importante entrenar la mente para estar presentes aquí y ahora."</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/jpg/Sofia.jpg" class="card-img-top" alt="retrato de Sofia">
+        <div class="card-body">
+          <h5 class="card-title">Sofía</h5>
+          <p class="card-text">Licenciada en Nutrición con un posgrado en Alimentación Plant-based. Adora pasar su tiempo en su huerta, los animales y la música. Se encuentra actualmente terminando su carrera en Gestión Medioambiental."</p>
+          <p class="card-text"><small class="text-muted">"Considero la comida una medicina que alimenta un cuerpo sano y sustenta nuestro espíritu. La felicidad se encuentra en lo común y corriente."</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/jpg/Victoria.jpg" class="card-img-top" alt="retrato de Victoria">
+        <div class="card-body">
+          <h5 class="card-title">Victoria</h5>
+          <p class="card-text">Con un Doctorado en Psicología, cuenta con amplia preparación en materia de diversidad, igualdad de género, educación sexual integral. Su cable a tierra es el surf y disfruta de tocar el ukulele.</p>
+          <p class="card-text"><small class="text-muted">"Todo lo que sucede puede interpretarse de múltiples maneras; lo que importa es como reacciones tú. Tu mente tiene el poder."</small></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="koiFooter">
+    <ul class="mb-0">
+      <li class="xsHide">
+        <span class="position"><img src="../../assets/svg/smileyPos.svg" alt="ícono de posición"> 1103 Lotus Street,
+          Fiorida</span>
+      </li>
+      <li class="xsHide"><span><i class="fa-solid fa-plus"></i>3 120 129 1990</span></li>
+      <li>
+        <span><i class="fa-brands fa-instagram"></i></span>
+        <span><i class="fa-brands fa-facebook-square"></i></span>
+        <span><i class="fa-brands fa-linkedin"></i></span>
+      </li>
+      <li><span>© 2022</span></li>
+    </ul>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>

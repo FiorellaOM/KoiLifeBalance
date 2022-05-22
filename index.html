@@ -29,14 +29,13 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="./pages/about/about.html">About us</a></li>
       <li><a href="./pages/services/services.html">Services</a></li>
-      <li><a href="./pages/business/business.html">Business services</a></li>
+      <li><a href="./pages/business/business.html">Others</a></li>
       <li><a href="./pages/contact/contact.html">Contact us</a></li>
     </ul>
   </div>
 </div>
 
 <body class="bgWhite">
-
   <header>
     <div>
       <nav class="koiHeader">
@@ -50,7 +49,7 @@
           </li>
           <li><a href="./pages/about/about.html">About us</a></li>
           <li><a href="./pages/services/services.html">Services</a></li>
-          <li><a href="./pages/business/business.html">Business services</a></li>
+          <li><a href="./pages/business/business.html">Others</a></li>
           <li><a href="./pages/contact/contact.html">Contact us</a></li>
         </ul>
         <button class="menuMobileButton desktopHide" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
@@ -60,18 +59,17 @@
 
   <main class="koiContent">
     <section class="homeIntro">
-      <div class="backgroundElements">
-        <div class="homeBgWater"></div>
-        <img id="koiHome" class="koiFish" src="./assets/svg/koi.svg" alt="pez koi"/>
-       <img id="lily1" class="lily" src="./assets/svg/lily.svg" alt="flor de lily"/>
-        <img id="lily2" class="lily xsHide" src="./assets/svg/lily.svg" alt="flor de lily"/>
+      <div class="backgroundElements animate__animated animate__fadeIn">
+        <div class="homeBgWater animate__animated animate__fadeIn"></div>
+        <img id="koiHome" class="koiFish koi1Animation" src="./assets/svg/koi.svg" alt="pez koi"/>
+        <img id="lily1" class="lily rotateFlower2" src="./assets/svg/lily.svg" alt="flor de lily"/>
+        <img id="lily2" class="lily rotateFlower1" src="./assets/svg/lily.svg" alt="flor de lily"/>
         <img id="leaf1" class="leaf" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
         <img id="leaf2" class="leaf xsHide" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
         <img id="leaf3" class="leaf xsHide" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
-        <img id="leaf4" class="leaf xsHide" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
+        <img id="leaf4" class="leaf" src="./assets/svg/leaf.svg" alt="hoja de lily"/>
         <img class="homeGirl" src="./assets/svg/girl.svg" />
         <article class="homeContainer">
-          <!-- <h2 class="sectionTitle">Koi Life Balance</h2> -->
           <p>
             "Para conservar el equilibrio, debemos mantener unido lo interior y lo exterior,
             lo visible y lo invisible, lo conocido y lo desconocido, lo temporal y lo eterno,
@@ -80,16 +78,21 @@
         </article>
       </div>
     </section>
+    <section class="homeGrid">
+      <div class="pic1"></div>
+      <div class="pic2"></div>
+      <div class="pic3"></div>
+      <div class="pic4"></div>
+      <div class="pic5"></div>
+    </section>
     <section class="homeKnowMore">
       <article>
         <p>
           Creemos que a través de nuevas perspectivas podemos alcanzar armonía y lograr enriquecernos y así
           fortalecernos, alcanzando un equilibrio interior y exterior. 
           De este modo tus metas y objetivos estarán al alcance de tus manos.
-          <br>
-          <br>
-          Te damos la bienvenida a un nuevo estilo de vida.
         </p>
+        <span>Te damos la bienvenida a un nuevo estilo de vida :)</span> 
       </article>
     </section>
   </main>

@@ -2,6 +2,59 @@
     animations:
 */
 
+// Index Animation
+
+.rotateFlower1 {
+  animation: flower1 5s ease-in-out forwards;
+}
+
+.rotateFlower2 {
+  animation: flower2 6s ease-in-out forwards;
+}
+
+.koi1Animation {
+  animation: koi1 6s ease-in-out forwards;
+}
+
+@keyframes koi1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) translateY(-10px) rotate(0);
+  }
+
+  40%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+}
+
+@keyframes flower1 {
+  0% {
+    transform: translateY(0)  translateX(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(10px)  translateX(15px) rotate(135deg);
+  }
+}
+
+@keyframes flower2 {
+  0% {
+    transform: translateY(0)  translateX(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(5px)  translateX(5px) rotate(-110deg);
+  }
+}
+
+
+//
+
 .animate__animated.animate__rotateIn {
     --animate-duration: 1s;
   }

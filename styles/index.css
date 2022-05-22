@@ -1,6 +1,38 @@
+@charset "UTF-8";
 /*
     animations:
 */
+.rotateFlower1 {
+  animation: flower1 5s ease-in-out forwards; }
+
+.rotateFlower2 {
+  animation: flower2 6s ease-in-out forwards; }
+
+.koi1Animation {
+  animation: koi1 6s ease-in-out forwards; }
+
+@keyframes koi1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) translateY(-10px) rotate(0); }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotate(0); } }
+
+@keyframes flower1 {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg); }
+  100% {
+    transform: translateY(10px) translateX(15px) rotate(135deg); } }
+
+@keyframes flower2 {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg); }
+  100% {
+    transform: translateY(5px) translateX(5px) rotate(-110deg); } }
+
 .animate__animated.animate__rotateIn {
   --animate-duration: 1s; }
 
@@ -109,9 +141,44 @@ nav li a {
 .sectionTitle {
   color: #f0372d;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 600;
   text-align: center;
   margin: 2rem; }
+
+.homeGrid {
+  height: 25vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 7px;
+  grid-template-areas: "pic1 pic2 pic3 pic4 pic5";
+  margin: 5px; }
+
+.pic, .pic1, .pic2, .pic3, .pic4, .pic5 {
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.pic1 {
+  grid-area: pic1;
+  background-image: url("../../assets/jpg/Sustentabilidad.jpg");
+  background-position: center; }
+
+.pic2 {
+  grid-area: pic2;
+  background-image: url("../../assets/jpg/Escuela.jpg"); }
+
+.pic3 {
+  grid-area: pic3;
+  background-image: url("../../assets/jpg/Huerta.jpg"); }
+
+.pic4 {
+  grid-area: pic4;
+  background-image: url("../../assets/jpg/Meditacion.jpg"); }
+
+.pic5 {
+  grid-area: pic5;
+  background-image: url("../../assets/jpg/Vegetarianismo.jpg"); }
 
 .homeKnowMore {
   width: 100%;
@@ -121,7 +188,15 @@ nav li a {
   .homeKnowMore p {
     margin: 4rem;
     font-size: medium;
-    max-width: 30rem; }
+    text-align: center; }
+  .homeKnowMore span {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+    margin: 3rem; }
 
 .homeIntro {
   display: flex;
@@ -165,12 +240,12 @@ i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  height: 80%;
-  width: 65%;
-  border-radius: 50px; }
+  height: 100%;
+  width: 80%;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
   .aboutContainer article {
-    margin: 3rem; }
+    padding: 1rem; }
 
 .imageAbout {
   height: 100%;
@@ -188,9 +263,12 @@ i:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 0.5rem 4rem;
-  border-radius: 50px; }
+  border-radius: 50px;
+  backdrop-filter: blur(3px);
+  border: white solid;
+  border-width: 1px; }
   .contactContainer form input {
     background-color: #f1f1f1;
     border: none;
@@ -228,19 +306,27 @@ i:hover {
 
 .servicesContainer {
   display: flex;
-  color: #707070; }
+  justify-content: center;
+  align-items: center;
+  color: #707070;
+  background-color: white;
+  min-width: 100%;
+  margin: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
-.sideServices {
-  flex: 0 1 30%;
-  margin: 2rem 1rem 2rem 2em; }
-  .sideServices p {
-    margin: 3rem; }
+.topServices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black; }
+  .topServices p {
+    text-align: center; }
 
 .mainServices {
-  flex: 1 1 70%;
-  background-color: white;
-  border-radius: 10px;
-  margin: 2rem 2rem 2rem 1rem;
+  flex: 1 1 40%;
+  margin: 0rem 2rem 2rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -251,53 +337,118 @@ i:hover {
     width: 30%; }
   .mainServices h3 {
     color: #181430;
-    font-size: small;
-    font-style: italic; }
+    font-size: medium;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .mainServices p {
+    text-align: center; }
+  .mainServices a {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: #f0372d; }
+  .mainServices a:hover {
+    cursor: pointer; }
 
 .serviceIcon {
-  background: #e8e8e8;
-  background: linear-gradient(180deg, #e1e8e2 0%, #b1cbb1 100%);
-  border-radius: 100%;
   width: 100%;
-  padding: 3rem;
-  height: auto;
-  margin: 2rem 0; }
+  height: auto; }
 
-.mainBusiness {
-  flex: 1 1 100%;
-  max-height: 70%;
-  background-color: white;
-  border-radius: 50px;
-  margin: 2rem 2rem 2rem 1rem;
-  flex-direction: column;
+.serviceSection {
   display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-  .mainBusiness div {
-    display: flex;
-    padding: 1rem;
-    font-size: x-small;
-    width: 80%;
-    min-height: 50%;
-    flex-direction: column;
-    justify-content: center; }
-  .mainBusiness picture {
-    height: 45%;
-    min-width: 100%;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    background-image: url("../assets/img/meditate.jpg");
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 65%; }
-  .mainBusiness h3 {
-    color: #181430;
-    font-size: small;
-    font-style: italic; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 60vh;
+  min-width: 99vw; }
+
+#imageAlimentacion {
+  background-image: url("../../assets/jpg/Alimentacion.jpg");
+  background-position: bottom; }
+
+#imageSustentabilidad {
+  background-image: url("../../assets/jpg/Botella.jpg"); }
+
+#imageMenteCuerpo {
+  background-image: url("../../assets/jpg/Coaching.jpg"); }
+
+.sectionImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  background-color: white;
+  min-height: 17rem;
+  min-width: 17rem;
+  margin: 4rem; }
+
+.sectionText h3 {
+  color: #181430;
+  font-size: larger;
+  font-style: italic;
+  margin-bottom: 1rem; }
+
+.sectionText p {
+  color: #707070;
+  margin-right: 5rem; }
+
+.servicesSectionCont hr {
+  border: white solid;
+  border-width: 10px; }
 
 .desktopHide {
   display: none; }
+
+.othersContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #707070;
+  background-color: white;
+  min-width: 100%;
+  margin: 1rem 0 0 0;
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
+
+.serviceSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 60vh;
+  min-width: 99vw; }
+
+.othersSection {
+  width: 100%;
+  height: 100%; }
+
+#imageEmpresa {
+  background-image: url("../../assets/jpg/Empresas.jpg"); }
+
+#imageEscuela {
+  background-image: url("../../assets/jpg/Niño.jpg");
+  background-position: top; }
+
+.sectionImageOthers {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  min-height: 400px;
+  min-width: 100%;
+  position: relative;
+  background-attachment: fixed; }
+
+.sectionTextOthers {
+  margin: 3rem; }
+  .sectionTextOthers h3 {
+    color: #181430;
+    font-size: larger;
+    font-style: italic;
+    margin-bottom: 1rem; }
+  .sectionTextOthers p {
+    color: #707070; }
 
 /* Layout general /////////////////////////////////////////////////////////*/
 * {
@@ -310,6 +461,9 @@ body {
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
   font-family: "Lato", sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
 
 .bgGradient {
   background: #e8e8e8;
@@ -340,7 +494,7 @@ body {
   width: auto;
   z-index: 5; }
 
-.leaf, #leaf1, #leaf2, #leaf3, #leaf4 {
+.leaf, #leaf1, #leaf2, #leaf3, #leaf4, #leaf5, #leaf6 {
   position: absolute;
   height: 4rem;
   width: auto; }
@@ -368,7 +522,19 @@ body {
   height: 3.5rem;
   transform: rotate(-0.2turn); }
 
-.lily, #lily1, #lily2 {
+#leaf5 {
+  top: 32%;
+  left: 5%;
+  height: 3rem;
+  transform: rotate(0.3turn); }
+
+#leaf6 {
+  top: 33%;
+  right: 6%;
+  height: 3.5rem;
+  transform: rotate(-0.2turn); }
+
+.lily, #lily1, #lily2, #lily3, #lily4 {
   position: absolute;
   height: 4rem;
   width: auto; }
@@ -381,6 +547,16 @@ body {
   top: 30%;
   right: 35%;
   height: 5rem;
+  transform: rotate(-0.35turn); }
+
+#lily3 {
+  top: 40%;
+  left: 9%;
+  height: 3rem; }
+
+#lily4 {
+  top: 62%;
+  right: 31%;
   transform: rotate(-0.35turn); }
 
 .koi, #koiHome, #koi1, #koi2, #koi3, #koi4 {
@@ -396,8 +572,8 @@ body {
   height: 4rem; }
 
 #koi1 {
-  top: 25%;
-  left: 10%; }
+  top: 35%;
+  left: 29%; }
 
 #koi2 {
   bottom: 20%;

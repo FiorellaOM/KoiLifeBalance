@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
     animations:
 */
@@ -161,24 +160,24 @@ nav li a {
 
 .pic1 {
   grid-area: pic1;
-  background-image: url("../../assets/jpg/sustentabilidad.jpg");
+  background-image: url("../assets/jpg/sustentabilidad.jpg");
   background-position: center; }
 
 .pic2 {
   grid-area: pic2;
-  background-image: url("../../assets/jpg/escuela.jpg"); }
+  background-image: url("../assets/jpg/escuela.jpg"); }
 
 .pic3 {
   grid-area: pic3;
-  background-image: url("../../assets/jpg/huerta.jpg"); }
+  background-image: url("../assets/jpg/huerta.jpg"); }
 
 .pic4 {
   grid-area: pic4;
-  background-image: url("../../assets/jpg/meditacion.jpg"); }
+  background-image: url("../assets/jpg/meditacion.jpg"); }
 
 .pic5 {
   grid-area: pic5;
-  background-image: url("../../assets/jpg/vegetarianismo.jpg"); }
+  background-image: url("../assets/jpg/vegetarianismo.jpg"); }
 
 .homeKnowMore {
   width: 100%;
@@ -424,10 +423,10 @@ i:hover {
   height: 100%; }
 
 #imageEmpresa {
-  background-image: url("../../assets/jpg/empresas.jpg"); }
+  background-image: url("../assets/jpg/empresas.jpg"); }
 
 #imageEscuela {
-  background-image: url("../../assets/jpg/niño.jpg");
+  background-image: url("../assets/jpg/ninio.jpg");
   background-position: top; }
 
 .sectionImageOthers {

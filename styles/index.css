@@ -161,24 +161,24 @@ nav li a {
 
 .pic1 {
   grid-area: pic1;
-  background-image: url("../../assets/jpg/Sustentabilidad.jpg");
+  background-image: url("../../assets/jpg/sustentabilidad.jpg");
   background-position: center; }
 
 .pic2 {
   grid-area: pic2;
-  background-image: url("../../assets/jpg/Escuela.jpg"); }
+  background-image: url("../../assets/jpg/escuela.jpg"); }
 
 .pic3 {
   grid-area: pic3;
-  background-image: url("../../assets/jpg/Huerta.jpg"); }
+  background-image: url("../../assets/jpg/huerta.jpg"); }
 
 .pic4 {
   grid-area: pic4;
-  background-image: url("../../assets/jpg/Meditacion.jpg"); }
+  background-image: url("../../assets/jpg/meditacion.jpg"); }
 
 .pic5 {
   grid-area: pic5;
-  background-image: url("../../assets/jpg/Vegetarianismo.jpg"); }
+  background-image: url("../../assets/jpg/vegetarianismo.jpg"); }
 
 .homeKnowMore {
   width: 100%;
@@ -364,14 +364,14 @@ i:hover {
   min-width: 99vw; }
 
 #imageAlimentacion {
-  background-image: url("../../assets/jpg/Alimentacion.jpg");
+  background-image: url("../../assets/jpg/alimentacion.jpg");
   background-position: bottom; }
 
 #imageSustentabilidad {
-  background-image: url("../../assets/jpg/Botella.jpg"); }
+  background-image: url("../../assets/jpg/botella.jpg"); }
 
 #imageMenteCuerpo {
-  background-image: url("../../assets/jpg/Coaching.jpg"); }
+  background-image: url("../../assets/jpg/coaching.jpg"); }
 
 .sectionImage {
   background-size: cover;
@@ -424,10 +424,10 @@ i:hover {
   height: 100%; }
 
 #imageEmpresa {
-  background-image: url("../../assets/jpg/Empresas.jpg"); }
+  background-image: url("../../assets/jpg/empresas.jpg"); }
 
 #imageEscuela {
-  background-image: url("../../assets/jpg/Niño.jpg");
+  background-image: url("../../assets/jpg/niño.jpg");
   background-position: top; }
 
 .sectionImageOthers {
